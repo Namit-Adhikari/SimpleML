@@ -1,0 +1,53 @@
+# Python bytecode and caches
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Testing and coverage
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+tests/.outputs/
+
+# Build artifacts
+build/
+dist/
+*.egg-info/
+
+# Local development and editor files
+.vscode/
+.idea/
+
+# Jupyter notebooks checkpoints
+.ipynb_checkpoints/
+
+# Transient preprocessing cache (generated, never committed)
+.cache/
+
+# Project results
+results/*
+!results/.gitkeep
+artifacts/
+runs/
+outputs/
+checkpoints/
+models/
+metrics/
+plots/
+*.pkl
+*.joblib
+*.h5
+*.onnx
+*.pt
+*.pth
+
+# OS files
+.DS_Store
+Thumbs.db

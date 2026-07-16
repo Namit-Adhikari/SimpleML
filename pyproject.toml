@@ -1,0 +1,45 @@
+[project]
+name = "simpleml"
+version = "0.1.0"
+description = "A simple English-style DSL for building end-to-end machine learning pipelines."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "GNU Affero General Public License v3" }
+keywords = ["dsl", "machine-learning", "tabular-data"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3.14",
+    "License :: OSI Approved :: GNU Affero General Public License v3",
+    "Operating System :: OS Independent",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+dependencies = [
+    "ply>=3.11",
+    "matplotlib>=3.8",
+]
+
+[project.scripts]
+simpleml = "simpleml.cli:main"
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project.urls]
+Documentation = "https://github.com/Namit-Adhikari/SimpleML#readme"
+Repository = "https://github.com/Namit-Adhikari/SimpleML.git"
+
+[tool.setuptools]
+packages = ["simpleml"]
+
+[tool.setuptools.package-dir]
+simpleml = "src"
+
+[tool.uv.workspace]
+members = [
+    "SimpleML",
+]
